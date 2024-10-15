@@ -1,16 +1,20 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
   --font-poppins: 'Poppins', sans-serif;
 
   /* FONTS */
-  --heading1: 700 32px/120% var(--font-poppins);
-  --heading2: 700 24px/120% var(--font-poppins);
-  --heading3: 700 20px/120% var(--font-poppins);
-  --heading3: 700 16px/120% var(--font-poppins);
+  --heading1: 700 2rem/120% var(--font-poppins);
+  --heading2: 700 1.5rem/120% var(--font-poppins);
+  --heading3: 700 1.25rem/120% var(--font-poppins);
+  --heading3: 700 1rem/120% var(--font-poppins);
+
+  --text: 400 1rem/1.5 var(--font-poppins);
+  --text-sm: 400 0.875rem/1.4 var(--font-poppins);
 
   /* COLORS */
   --brand-light: #F67841;
@@ -37,4 +41,13 @@
   --blue: #b8cedc;
   --violet: #c3b2e7;
   --pink: #f682a5;
+
+  font: var(--text);
 }
+body{
+  overflow: hidden;
+
+  font: var(--text);
+  color: var(--text-secondary);
+}
+
