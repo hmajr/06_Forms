@@ -33,30 +33,49 @@
         <form action="" method="post">
           <div>
           
-            <h2>Informações da criança</h2>
-            <div>
-              <label for="full_name">Nome Completo</label>
-              <input type="text" name="full_name" placeholder="Insira o nome do aluno aqui">
-            </div>
-            <div>
-              <label for="data_nascimento">Data de Nascimento</label>
-              <input type="date" name="data_nascimento" id="">
-            </div>  
-            <div>
-              <label for="gender">Sexo</label>
-              <select name="gender" id="">
-                <option value="masculino">Masculino</option>
-                <option value="feminino">Feminino</option>
-              </select>
-            </div>
-            <div>
-              <label for="general_info">Informações gerais</label>
-              <textarea name="general_info" id=""></textarea>
-            </div>
-            <div>
-              <label for="register_doc">Certidão de Nascimento</label>
-              <input type="file" name="register_doc" id="">
-            </div>
+            <fieldset>
+              <legend>Informações da criança</legend>
+              
+              <div class="input-wrapper">
+                <label for="fullname">Nome Completo</label>
+                <input 
+                  type="text" 
+                  name="fullname" id="fullname"
+                  placeholder="Insira o nome do aluno aqui"
+                >
+              </div>
+              <div class="input-wrapper">
+                <label for="birthdate">Data de Nascimento</label>
+                <input type="date" name="birthdate" id="birthdate" lang="pt-BR">
+              </div>
+              <div class="select-wrapper">
+                <label for="gender">Sexo</label>
+                <select name="gender" id="gender">
+                  <option value="masculino">Masculino</option>
+                  <option value="feminino">Feminino</option>
+                </select>
+              </div>
+              <div class="textarea-wrapper">
+                <label for="medical-info">Informações gerais</label>
+                <textarea 
+                  name="medical-info"
+                  id="medical-info"
+                  cols="30" rows="10"
+                  placeholder="A criança possui alguma condição médica que
+                    a escola deve estar ciente? (caso sim, especifique)"
+                ></textarea>
+              </div>
+              <div class="droparea-wrapper">
+                <label for="birth-file">Certidão de Nascimento</label>
+                <input type="file" name="birth-file" id="birth-file">
+                <img src="./assets/icons/cloud-upload-gray.svg" alt="">
+                <p>
+                  Clique aqui para <br>
+                  selecionar os arquivos
+                </p>
+              </div>
+            </fieldset>
+
           </div>
         
           <div>
