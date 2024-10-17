@@ -114,34 +114,29 @@
             </div>
           </fieldset>  
         
-          <div>
-            <h2>Informações do resonsável</h2>
+          <fieldset class="gardian">
+            <legend>Informações do resonsável</legend>
         
-            <label>Nome do responsável</label>
-            <input type="text" name="name_parents" placeholder="Insira o nome do responsável aqui">
-            <label>Telefone</label>
-            <input type="tel" name="full_name" placeholder="Insira o telefone do responsável aqui">
-            <label>E-mail</label>
-            <input type="email" name="full_name" placeholder="Insira o e-mail do responsável aqui">
-          </div>
-        
-          <div>
-            <h2>Opções de matrícula</h2>
-        
-            <label for="study_time">Selecione o turno de estudo:</label>
-        
-            <div class="radio">
-              <input type="radio" name="study_time" value="morning" >
-              <div>
-                <img src="./assets/icons/sun-cloud-02.svg" alt="">
-                <p>Manhã</p>
+            <div class="input-wrapper">
+              <label for="gardian_name">Nome do responsável</label>
+              <input type="text" name="gardian_name" id="gardian_name" placeholder="Insira o nome do responsável aqui">
+              <small>Principal responsável legal e contato de emergência</small>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="gardian_phone">Telefone</label>
+              <input type="tel" name="gardian_phone" id="gardian_phone" placeholder="(01) 23456-7890">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="mail">E-mail</label>
+              <input type="email" name="mail" id="mail" required>
+              <div class="error">
+                <img src="./assets/icons/alert-circle.svg" alt="Ícone de alerta vermelho">
+                <span>Insira um e-mail válido</span>
               </div>
             </div>
-            <div class="radio">
-              <input type="radio" name="study_time" value="afternoon">
-              <div>
-                <img src="./assets/icons/sun-02.svg" alt="">
-                <p>Tarde</p>
+          </fieldset>
               </div>
             </div>
         
