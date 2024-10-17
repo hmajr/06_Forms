@@ -28,24 +28,20 @@
         </h3>
     
         <form method="post" enctype="multipart/form-data">
-          <div>
-          
-            <fieldset>
-              <legend>Informações da criança</legend>
-              
-              <div class="input-wrapper">
-                <label for="fullname">Nome Completo</label>
-                <input 
-                  type="text" 
-                  name="fullname" id="fullname"
-                  placeholder="Insira o nome do aluno aqui"
-                >
-              </div>
-              <div class="input-wrapper">
-                <label for="birthdate">Data de Nascimento</label>
-                <input type="date" name="birthdate" id="birthdate" lang="pt-BR">
-              </div>
-              <div class="select-wrapper">
+          <fieldset class="child-info">
+            <legend>Informações da criança</legend>
+
+            <div class="input-wrapper">
+                <label for="fullname">Nome completo</label>
+                <input id="fullname" name="fullname" type="text" placeholder="Qual o nome da criança">
+            </div>
+
+            <div class="input-wrapper">
+                <label for="birth">Data de nascimento</label>
+                <input type="date" name="birth" id="birth" lang="pt-BR">
+            </div>
+
+            <div class="select-wrapper">
                 <label for="gender">Sexo</label>
                 <select name="gender" id="gender">
                   <option value="masculino">Masculino</option>
